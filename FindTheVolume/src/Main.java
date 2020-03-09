@@ -1,14 +1,24 @@
 import java.util.Scanner;
 public class Main {
-    static int answer;
-    public static void main(String[] args) {
+    //changed from static to not static
+    int answer;
+    
+    //refactor
+    private void menu(){
+        System.out.println();
+        System.out.println("Type 1 to find the properties of a rectangle");
+        System.out.println("Type 2 to find the properties of a sphere");
+        System.out.println("Type something else to exit");
+        answer = input.nextInt();
+    }
+    
+    //refactor
+    private void (Shape)
+    
+    public Main(){
         Scanner input = new Scanner (System.in);
         while (true){
-            System.out.println();
-            System.out.println("Type 1 to frind the properties of a rectangle");
-            System.out.println("Type 2 to frind the properties of a sphere");
-            System.out.println("Type something else to exit");
-            answer = input.nextInt();
+            menu();
             
             if (answer == 1){
             RectangularPrism r1 = new RectangularPrism();
@@ -27,5 +37,10 @@ public class Main {
                 }
             }
         }
+    }
+    
+    //changed from long code to new Main();
+    public static void main(String[] args) {
+        new Main();
     }
     
