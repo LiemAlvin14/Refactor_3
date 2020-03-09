@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class RectangularPrism {
+public class RectangularPrism extends Shape3d{
     double height;
     double length;
     double width;
@@ -15,6 +15,7 @@ public class RectangularPrism {
     }
     
     //gets the length width and height of the object
+    @override
     public void getValues(){
         Scanner input = new Scanner (System.in);
         System.out.println("Please Enter the height of the rectangular prism");
@@ -29,12 +30,14 @@ public class RectangularPrism {
     
     //takes length width and height to get surface area and volume
     //left public so that you can still get volume and surface area if values are changed manually within the code
+    @override
     public void calculateValues(){
         this.volume = this.height*this.length*this.width;
         this.surfaceArea = (this.height*this.length + this.height*this.width + this.length * this.width)*2;
     }
     
     //simply displays the values of surface area and volume
+    @override
     public void displayValues(){
         System.out.println("Surface Area : " + this.surfaceArea);
         System.out.println("Volume : " + this.volume);
