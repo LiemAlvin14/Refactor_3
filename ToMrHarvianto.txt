@@ -1,0 +1,3 @@
+Edited: 
+- Added a new parent class Shape3d
+- Refactored the Main class
