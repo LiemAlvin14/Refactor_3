@@ -1,7 +1,7 @@
 //this is a new class I made to refactor the code
-abstract class Shape3d{
+class Shape3d{
     
-    public void getValues();
-    public void calculateValues();
-    public void displayValues();
+    public abstract void getValues();
+    public abstract void calculateValues();
+    public abstract void displayValues();
 }
